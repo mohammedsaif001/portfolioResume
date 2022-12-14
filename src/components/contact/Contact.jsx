@@ -18,7 +18,7 @@ function Contact() {
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk To Me</h3>
+                    <h3 className="contact__title">Contact Details</h3>
                     <div className="contact__info">
                         <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
