@@ -56,7 +56,7 @@ function Data() {
             </h1>
             <h3 className="home__subtitle">ReactJs Developer</h3>
             <p className="home__description">Strong Engineering Professional having proficiency in ReactJs framework, currently designated as Software Engineer at Nviera Technologies Pvt Ltd.  </p>
-            <a href="" className="button button--flex">
+            <a href="#contact" className="button button--flex">
                 Let's Connect
                 <svg
                     class="button__icon"
