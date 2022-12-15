@@ -7,6 +7,7 @@ import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Qualification from './components/qualification/Qualification';
 import Skills from './components/skills/Skills';
+import Project from './components/projects/Project';
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Project />
         <Qualification />
         <Contact />
       </main>
