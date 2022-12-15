@@ -36,17 +36,17 @@ function Header() {
                             <a href="#skills" className={activeNav === '#skills' ? "nav__link active-link" : "nav__link"} onClick={() => setActiveNav("#skills")}>
                                 <i className="uil uil-file-alt nav__icon"></i> Skills
                             </a>
+                        </li> <li className="nav__item">
+                            <a href="#projects" className={activeNav === '#projects' ? "nav__link active-link" : "nav__link"} onClick={() => setActiveNav("#projects")}>
+                                <i className="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
                         </li>
                         <li className="nav__item">
                             <a href="#qualification" className={activeNav === '#qualification' ? "nav__link active-link" : "nav__link"} onClick={() => setActiveNav("#qualification")}>
                                 <i className="uil uil-briefcase-alt nav__icon"></i> Qualification
                             </a>
                         </li>
-                        <li className="nav__item">
-                            <a href="#portfolio" className={activeNav === '#portfolio' ? "nav__link active-link" : "nav__link"} onClick={() => setActiveNav("#portfolio")}>
-                                <i className="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li>
+
                         <li className="nav__item">
                             <a href="#contact" className={activeNav === '#contact' ? "nav__link active-link" : "nav__link"} onClick={() => setActiveNav("#contact")}>
                                 <i className="uil uil-message nav__icon"></i> Contact

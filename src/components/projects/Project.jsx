@@ -114,7 +114,7 @@ const Project = () => {
                     <div>
                         <i className="uil uil-edit projects__icon">
                         </i>
-                        <h3 className="projects__title">News <br /> Flash</h3>
+                        <h3 className="projects__title">News Flash</h3>
                     </div>
                     <span className="projects__button" onClick={() => toggleTab(3)}>View More
                         <i className="uil uil-arrow-right projects__button-icon"></i>
