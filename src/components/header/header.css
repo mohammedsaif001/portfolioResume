@@ -2,7 +2,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  padding: 2% 0;
+  /* padding: 2% 0; */
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);

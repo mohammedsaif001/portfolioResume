@@ -4,27 +4,27 @@ function Info() {
     return (
         <div className="about__info grid">
             <div className="about__box">
+                <i class='bx bxs-book-bookmark about__icon'></i>
+                <h3 className="about__title">Education Qualification</h3>
+                <span className="about__subtitle">B.Tech CSE</span>
+
+            </div>
+            <div className="about__box">
                 <i className="bx bx-award about__icon"></i>
-                <h3 className="about__title">Experience</h3>
+                <h3 className="about__title">Software Engineer</h3>
                 <span className="about__subtitle">
-                    6+ Months
+                    ReactJs Developer
                 </span>
             </div>
             <div className="about__box">
-                <i className="bx bx-briefcase-alt about__icon"></i>
+                <i class='bx bx-plus-medical about__icon'></i>
 
-                <h3 className="about__title">Education</h3>
+                <h3 className="about__title">Community Volunteer</h3>
                 <span className="about__subtitle">
-                    B.Tech CSE
+                    Heal Bengaluru
                 </span>
             </div>
-            <div className="about__box">
-                <i className="bx bx-support about__icon"></i>
 
-                <h3 className="about__title">Support</h3>
-                <span className="about__subtitle">Online 24/7</span>
-
-            </div>
         </div>
     )
 }

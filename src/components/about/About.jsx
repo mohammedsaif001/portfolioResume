@@ -15,7 +15,7 @@ const About = () => {
                 <div className="about__data">
                     <Info />
                     <p className="about__description">
-                        Frontend Developer having experience in reactjs framework Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, quaerat aut dolorem soluta dolor molestias accusantium assumenda eaque debitis architecto.
+                        I'm a skilled React JS developer who is passionate about building dynamic, responsive websites that provide a positive user experience. I am very familiar with React and the ideas that drive it, like the virtual DOM and the ability to create reusable components. I have a strong foundation in JavaScript, HTML, and CSS, which allows me to develop user interfaces that are both functional and aesthetically beautiful. Furthermore, I have experience working with a group of developers to create excellent, scalable applications. I've used React Hooks, Redux and other performance-enhancing techniques when creating online applications. I am continually eager to learn new technology in order to develop my skills.
                     </p>
                     <a href={CV} download="" className="button button--flex">Download Resume
                         <svg
