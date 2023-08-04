@@ -68,6 +68,7 @@
   order: 1;
   justify-self: center;
   width: 300px;
+  border-radius: 50%;
   height: 300px;
   animation: profile__animate 8s ease-in-out infinite 1s;
 }
