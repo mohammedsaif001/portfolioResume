@@ -16,8 +16,53 @@ const projects = [
             `   Excellent grasp and knowledge of GIT for version control.`,
         ],
     },
+
     {
         id: 2,
+        icon: `uil-globe`,
+        title: `Google Clone`,
+        modalTitle: `Google Clone`,
+        descriptionBulletin: [
+            `Developed a responsive Google Clone using Next.js 13 and Tailwind CSS, with a focus on server-side rendering
+(SSR).`,
+            `Implemented efficient API usage, dynamic meta-data generation, and pagination for improved user experience.`,
+            `Showcased proficiency in Next.js, Tailwind CSS, and responsive web development principles.`,
+            `Successfully deployed the application to showcase the project’s functionalities`,
+        ],
+        link: `https://google-clone-mohammedsaif001.vercel.app/`,
+    },
+    {
+        id: 3,
+        icon: `uil-music`,
+        title: `Spotify Clone`,
+        modalTitle: `Spotify Clone`,
+        descriptionBulletin: [
+            `Responsive Spotify Clone with full control over song playback, pause, and volume for a seamless music experience.`,
+            `Enhanced user convenience with access to and playback of songs from saved playlists.`,
+            `Secure user authentication powered by NextAuth, ensuring data privacy and protection`,
+            `Implementation of middleware for user authentication and token validation, ensuring data integrity and secure access to features.`,
+            `Utilized custom hooks and debouncing with useCallback for code reusability and improved application
+performance.`,
+            `To interact with the Spotify Web API in this project, users need a valid Spotify instance running on their local machine. This local connection is crucial for authenticating users through the API. Make sure you have the Spotify desktop or mobile app installed and logged in before proceeding.`,
+            `Once the application is running and a song is playing in your local Spotify app, you can fully control playback, adjust volume, and access your saved playlists through the clone.`,
+        ],
+        link: ` https://spotify-clone-next12-mohammedsaif001.vercel.app/`,
+    },
+    {
+        id: 4,
+        icon: `uil-bitcoin`,
+        title: `Crypto Tracker`,
+        modalTitle: `Crypto Tracker`,
+        descriptionBulletin: [
+            `Created a real-time and historical cryptocurrency price tracking web application using ReactJS, CSS, and
+Chart.js npm package.`,
+            `Demonstrated excellent frontend skills by implementing responsive design and ensuring smooth user interactions,
+delivering a user-friendly and data-rich experience for crypto enthusiasts.`,
+        ],
+        link: `https://mohammedsaif001.github.io/cryptoTracker/`,
+    },
+    {
+        id: 5,
         icon: `uil-arrow `,
         title: `Medical Image \n
                             Denoising`,
@@ -39,7 +84,7 @@ const projects = [
         link: `https://mohammedsaif001.github.io/Medical-Image-Denoising/`,
     },
     {
-        id: 3,
+        id: 6,
         icon: `uil-edit`,
         title: `News Flash`,
         modalTitle: `News Flash`,
