@@ -42,6 +42,9 @@
 .about__description {
   padding: 0 4rem 0 0;
   margin-bottom: var(--mb-2-5);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
 }
 
 /*=============== BREAKPOINTS ===============*/
