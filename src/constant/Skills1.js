@@ -5,13 +5,18 @@ const skills1 = [
         exp: "Intermediate"
     },
     {
-        id: 2,
-        skill: "Bootstrap",
+        id: 5,
+        skill: "Tailwind Css",
         exp: "Intermediate"
     },
     {
+        id: 2,
+        skill: "Bootstrap",
+        exp: "Beginner"
+    },
+    {
         id: 3,
-        skill: "React Redux",
+        skill: "Redux",
         exp: "Intermediate"
     },
     {
@@ -19,16 +24,12 @@ const skills1 = [
         skill: "Git",
         exp: "Intermediate"
     },
-    // {
-    //     id: 5,
-    //     skill: "",
-    //     exp: ""
-    // },
-    // {
-    //     id: 6,
-    //     skill: "",
-    //     exp: ""
-    // },
+
+    {
+        id: 6,
+        skill: "React Router",
+        exp: "Intermediate"
+    },
 ]
 
 export default skills1

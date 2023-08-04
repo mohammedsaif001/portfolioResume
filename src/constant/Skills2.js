@@ -21,14 +21,14 @@ const skills2 = [
     },
     {
         id: 5,
-        skill: "Python",
-        exp: "Basic"
+        skill: "Next.js",
+        exp: "Intermediate"
     },
-    // {
-    //     id: 6,
-    //     skill: "",
-    //     exp: ""
-    // },
+    {
+        id: 6,
+        skill: "Python",
+        exp: "Beginner"
+    },
 ]
 
 export default skills2
