@@ -5,15 +5,17 @@ const projects = [
         title: `Professional Experience`,
         modalTitle: `Professional Experience at Nviera Technologies Pvt Ltd`,
         descriptionBulletin: [
-            `     Technical proficiency in creating and modifying software in
-                                a quick-paced, agile setting while utilising the most recent
-                                infrastructure and development approaches.`,
-            `  Relentlessly enhanced software quality with a sharp eye for
-                                reusability, security, testability, and performance while
-                                iterating on the development process to enable new
-                                functionality.`,
-            `Hands-on experience with the React JS Framework.`,
-            `   Excellent grasp and knowledge of GIT for version control.`,
+            `Proficiently developed and implemented reusable UI components using React, optimizing codebase efficiency and
+maintainability for front-end development.`,
+            `Demonstrated leadership skills by mentoring a colleague in React, fostering a collaborative team environment, and
+increasing productivity and knowledge sharing.`,
+            `Successfully utilized React Redux for seamless data management, achieving a 20% reduction in loading times and
+ensuring a smooth user experience.`,
+            `Integrated APIs and dynamically displayed data, enhancing overall user interactions and product functionality.`,
+            `Showcased problem-solving abilities by debugging and resolving bugs reported in Jira, emphasizing meticulous
+attention to detail in front-end development.`,
+            `Improved website performance and speed through optimization techniques by 55%, sought mentorship to
+enhance React expertise, and collaborated effectively with backend and QA teams for seamless feature delivery.`,
         ],
     },
 

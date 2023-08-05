@@ -1,7 +1,7 @@
 import React from 'react'
 import "./about.css"
 import MohammedSaifPro from "../../assets/MohammedSaifPro.jpg"
-import CV from "../../assets/MohammedSaif's_Resume.pdf"
+import CV from "../../assets/Mohammed_Saif_Frontend_Dev_Resume.pdf"
 import Info from './Info'
 const About = () => {
     return (
@@ -15,7 +15,7 @@ const About = () => {
                 <div className="about__data">
                     <Info />
                     <p className="about__description">
-                        🚀<span style={{ fontWeight: "bold" }}> Are you prepared to meet a seasoned innovator?</span> With expertise in React.js, Material UI, Redux-Toolkit, Tailwind CSS, Next.js, I'm a Results-driven Front-End Developer who breathes life into web apps. My industry journey hones skills, optimizing code for seamless user experiences. Crafting captivating interfaces and cutting-edge solutions is my passion. Track record speaks volumes, contributing to successful web app developments. Beyond development, I'm an adventurous soul seeking new challenges to expand my expertise. If you crave confidence, proactivity, adaptability, let's unleash digital brilliance together. We'll craft remarkable impact on technology's ever-evolving landscape. Let's create the extraordinary! 💫🌟
+                        <p style={{ fontWeight: "bold", textAlign: "center", marginBottom: "2px", display: "block" }}> 🚀 Are you prepared to meet a seasoned innovator?</p> With expertise in React.js, Material UI, Redux-Toolkit, Tailwind CSS, Next.js, I'm a Results-driven Front-End Developer who breathes life into web apps. My industry journey hones skills, optimizing code for seamless user experiences. Crafting captivating interfaces and cutting-edge solutions is my passion. Track record speaks volumes, contributing to successful web app developments. Beyond development, I'm an adventurous soul seeking new challenges to expand my expertise. If you crave confidence, proactivity, adaptability, let's unleash digital brilliance together. We'll craft remarkable impact on technology's ever-evolving landscape. Let's create the extraordinary! 💫🌟
                     </p>
                     <a href={CV} download="" className="button button--flex">Download Resume
                         <svg
