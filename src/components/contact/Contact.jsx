@@ -1,15 +1,25 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
 
 function Contact() {
     const form = useRef();
+    const [submitStatus, setSubmitStatus] = useState(null);
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setSubmitStatus('sending');
 
         emailjs.sendForm('service_9va57kh', 'template_yiikd0m', form.current, '3l6ud9fgkB4doOG2x')
-        e.target.reset()
+            .then(() => {
+                setSubmitStatus('success');
+                e.target.reset();
+                setTimeout(() => setSubmitStatus(null), 5000);
+            })
+            .catch(() => {
+                setSubmitStatus('error');
+                setTimeout(() => setSubmitStatus(null), 5000);
+            });
     }
     return (
         <section className="contact section" id="contact">
@@ -24,21 +34,21 @@ function Contact() {
                             <i className="bx bx-mail-send contact__card-icon"></i>
                             <h3 className="contact__card-title"> Email </h3>
                             <span className="contact__card-data">mohammed001saif@gmail.com</span>
-                            <a href="mailto:mohammed001saif@gmail.com" className="contact__button">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="mailto:mohammed001saif@gmail.com" className="contact__button" rel="noopener noreferrer" aria-label="Send email to Mohammed Saif">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
 
                         </div>
                         <div className="contact__card">
                             <i className="bx bxl-whatsapp contact__card-icon"></i>
                             <h3 className="contact__card-title"> Whatsapp </h3>
                             <span className="contact__card-data">+91-9632137360</span>
-                            <a href="https://api.whatsapp.com/send?phone=9632137360&text=Hi Saif, We viewed your profile on your portfolio website can I get more information about you" className="contact__button">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=9632137360&text=Hi Saif, We viewed your profile on your portfolio website can I get more information about you" className="contact__button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
 
                         </div>
                         <div className="contact__card">
                             <i className="bx uil-linkedin-alt contact__card-icon"></i>
                             <h3 className="contact__card-title"> LinkedIn </h3>
                             <span className="contact__card-data">@mohammedsaif001</span>
-                            <a href="https://www.linkedin.com/in/mohammedsaif001" className="contact__button">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="https://www.linkedin.com/in/mohammedsaif001" className="contact__button" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
 
                         </div>
                     </div>
@@ -47,17 +57,23 @@ function Contact() {
                     <h3 className="contact__title">Interested in my Profile? Hire Me:)</h3>
                     <form action="" className="contact__form" ref={form} onSubmit={sendEmail}>
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Name</label>
-                            <input required type="text" name="name" className='contact__form-input' placeholder="Enter Your Name" />
+                            <label htmlFor="contact-name" className="contact__form-tag">Name</label>
+                            <input required type="text" name="name" id="contact-name" className='contact__form-input' placeholder="Enter Your Name" />
                         </div>
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Email</label>
-                            <input required type="email" name="email" className='contact__form-input' placeholder="Enter Your Email" />
+                            <label htmlFor="contact-email" className="contact__form-tag">Email</label>
+                            <input required type="email" name="email" id="contact-email" className='contact__form-input' placeholder="Enter Your Email" />
                         </div>
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">Tell me about the opening</label>
-                            <textarea required name="organization" className="contact__form-input" cols="30" rows="10" placeholder='Organization details'></textarea>
+                            <label htmlFor="contact-organization" className="contact__form-tag">Tell me about the opening</label>
+                            <textarea required name="organization" id="contact-organization" className="contact__form-input" cols="30" rows="10" placeholder='Organization details'></textarea>
                         </div>
+                        {submitStatus === 'success' && (
+                            <p className="contact__message" style={{ color: 'green' }} role="alert">Message sent successfully!</p>
+                        )}
+                        {submitStatus === 'error' && (
+                            <p className="contact__message" style={{ color: 'red' }} role="alert">Failed to send message. Please try again.</p>
+                        )}
                         <button className="button button--flex">
                             Send Message
                             <svg

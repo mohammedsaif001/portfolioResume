@@ -5,23 +5,45 @@ const Modal = ({ toggleState, toggleTab, title, modalTitle, descriptionBulletin,
                 <i className={`uil ${icon} projects__icon`}></i>
                 <h3 className="projects__title">{title}</h3>
             </div>
-            <span className="projects__button" onClick={() => toggleTab(toggleTabValue)}>
+            <button 
+                className="projects__button" 
+                onClick={() => toggleTab(toggleTabValue)}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleTab(toggleTabValue);
+                    }
+                }}
+                aria-label={`View more details about ${title}`}
+                type="button"
+            >
                 View More
                 <i className="uil uil-arrow-right projects__button-icon"></i>
-            </span>
+            </button>
             <div
                 className={
-                    toggleState == toggleTabValue
+                    toggleState === toggleTabValue
                         ? "projects__modal active__modal"
                         : "projects__modal"
                 }
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="modal-title"
             >
                 <div className="projects__modal-content ">
-                    <i
+                    <button
                         className="uil uil-times projects__modal-close"
                         onClick={() => toggleTab(0)}
-                    ></i>
-                    <h3 className="projects__modal-title">{modalTitle}</h3>
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') {
+                                e.preventDefault();
+                                toggleTab(0);
+                            }
+                        }}
+                        aria-label="Close modal"
+                        type="button"
+                    ></button>
+                    <h3 className="projects__modal-title" id="modal-title">{modalTitle}</h3>
                     <ul className="projects__modal-projects grid">
                         {descriptionBulletin.map((desc, index) => (
                             <li className="projects__modal-project" key={index}>
@@ -38,6 +60,9 @@ const Modal = ({ toggleState, toggleTab, title, modalTitle, descriptionBulletin,
                                 <a
                                     href={`${link}`}
                                     style={{ color: "black" }}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="View project on GitHub"
                                 >
                                     Click here.
                                 </a>

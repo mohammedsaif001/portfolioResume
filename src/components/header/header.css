@@ -49,6 +49,20 @@
   color: var(--title-color-dark);
 }
 
+/* Button reset styles for accessibility */
+.nav__close,
+.nav__toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font: inherit;
+}
+
+.nav__close:focus,
+.nav__toggle:focus {
+  outline: 2px solid var(--title-color);
+  outline-offset: 2px;
+}
 /* Change background header */
 .scroll-header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);

@@ -7,12 +7,12 @@ const Skill1 = () => {
         <div className="skills__content">
             <h3 className="skills__title">Tools/Libraries</h3>
             <div className="skills__box">
-                <div div className="skills__group" >
+                <div className="skills__group">
 
                     {skills1.map((skill) => (
                         <SkillsSection key={skill.id} skill={skill.skill} exp={skill.exp} />
                     ))}
-                </div >
+                </div>
             </div>
         </div>
     )

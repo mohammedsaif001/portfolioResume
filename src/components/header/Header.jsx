@@ -1,19 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./header.css"
 
 function Header() {
-    // Change Background Header
-    window.addEventListener("scroll", function () {
-        const header = document.querySelector(".header")
-        // If scroll is higher than 560 viewport height, add the scroll-header class to a tag with the header tag
-
-        if (this.scrollY >= 80) header.classList.add("scroll-header")
-        else header.classList.remove("scroll-header")
-    })
-
     // Toggle Menu
     const [toggle, setToggle] = useState(false)
     const [activeNav, setActiveNav] = useState("#home")
+
+    // Change Background Header
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.querySelector(".header")
+            // If scroll is higher than 80 viewport height, add the scroll-header class
+            if (window.scrollY >= 80) {
+                header?.classList.add("scroll-header")
+            } else {
+                header?.classList.remove("scroll-header")
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        // Cleanup event listener on unmount
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
 
 
     return (
@@ -54,11 +65,34 @@ function Header() {
                         </li>
                     </ul>
 
-                    <i className="uil uil-times nav__close" onClick={() => setToggle(!toggle)}></i>
+                    <button
+                        className="uil uil-times nav__close"
+                        onClick={() => setToggle(false)}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                setToggle(false);
+                            }
+                        }}
+                        aria-label="Close navigation menu"
+                        type="button"
+                    ></button>
                 </div>
-                <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
+                <button
+                    className="nav__toggle"
+                    onClick={() => setToggle(!toggle)}
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            setToggle(!toggle);
+                        }
+                    }}
+                    aria-label={toggle ? "Close navigation menu" : "Open navigation menu"}
+                    aria-expanded={toggle}
+                    type="button"
+                >
                     <i className="uil uil-apps"></i>
-                </div>
+                </button>
             </nav>
         </header>
     )
