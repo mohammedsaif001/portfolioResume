@@ -1,0 +1,14 @@
+{
+  "title": "Mohammed Saif - Frontend Developer | React.js Specialist",
+  "description": "Mohammed Saif - Results-driven Frontend Developer specializing in React.js, Material UI, Redux-Toolkit, Tailwind CSS, and Next.js. Explore my portfolio of web applications and projects.",
+  "keywords": "Mohammed Saif, Frontend Developer, React Developer, Web Developer, JavaScript, React.js, Next.js, Portfolio",
+  "author": "Mohammed Saif",
+  "themeColor": "#000000",
+  "language": "en",
+  "openGraph": {
+    "type": "website",
+    "title": "Mohammed Saif - Frontend Developer Portfolio",
+    "description": "Results-driven Frontend Developer specializing in React.js and modern web technologies",
+    "siteName": "Mohammed Saif Portfolio"
+  }
+}

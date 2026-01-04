@@ -1,0 +1,77 @@
+{
+  "sectionTitle": "Get in Touch",
+  "sectionSubtitle": "Contact Me",
+  "contactDetailsTitle": "Contact Details",
+  "formTitle": "Interested in my Profile? Hire Me:)",
+  "contactCards": [
+    {
+      "id": "email",
+      "icon": "bx bx-mail-send",
+      "title": "Email",
+      "data": "mohammed001saif@gmail.com",
+      "link": "mailto:mohammed001saif@gmail.com",
+      "buttonText": "Write Me",
+      "ariaLabel": "Send email to Mohammed Saif"
+    },
+    {
+      "id": "whatsapp",
+      "icon": "bx bxl-whatsapp",
+      "title": "Whatsapp",
+      "data": "+91-9632137360",
+      "link": "https://api.whatsapp.com/send?phone=9632137360&text=Hi Saif, We viewed your profile on your portfolio website can I get more information about you",
+      "buttonText": "Write Me",
+      "ariaLabel": "Chat on WhatsApp",
+      "external": true
+    },
+    {
+      "id": "linkedin",
+      "icon": "bx uil-linkedin-alt",
+      "title": "LinkedIn",
+      "data": "@mohammedsaif001",
+      "link": "https://www.linkedin.com/in/mohammedsaif001",
+      "buttonText": "Write Me",
+      "ariaLabel": "Connect on LinkedIn",
+      "external": true
+    }
+  ],
+  "form": {
+    "fields": [
+      {
+        "id": "contact-name",
+        "name": "name",
+        "type": "text",
+        "label": "Name",
+        "placeholder": "Enter Your Name",
+        "required": true
+      },
+      {
+        "id": "contact-email",
+        "name": "email",
+        "type": "email",
+        "label": "Email",
+        "placeholder": "Enter Your Email",
+        "required": true
+      },
+      {
+        "id": "contact-organization",
+        "name": "organization",
+        "type": "textarea",
+        "label": "Tell me about the opening",
+        "placeholder": "Organization details",
+        "required": true,
+        "rows": 10,
+        "cols": 30
+      }
+    ],
+    "submitButton": "Send Message",
+    "emailjs": {
+      "serviceId": "service_9va57kh",
+      "templateId": "template_yiikd0m",
+      "publicKey": "3l6ud9fgkB4doOG2x"
+    },
+    "messages": {
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
+  }
+}

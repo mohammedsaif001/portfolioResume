@@ -1,0 +1,78 @@
+{
+  "sectionTitle": "Skills",
+  "sectionSubtitle": "My Technical Level",
+  "categories": [
+    {
+      "id": "technical-expertise",
+      "title": "Technical Expertise",
+      "skills": [
+        {
+          "id": 1,
+          "skill": "HTML",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 2,
+          "skill": "CSS",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 3,
+          "skill": "Javascript",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 4,
+          "skill": "ReactJs",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 5,
+          "skill": "Next.js",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 6,
+          "skill": "Python",
+          "exp": "Beginner"
+        }
+      ]
+    },
+    {
+      "id": "tools-libraries",
+      "title": "Tools/Libraries",
+      "skills": [
+        {
+          "id": 1,
+          "skill": "Material UI",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 2,
+          "skill": "Tailwind Css",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 3,
+          "skill": "Bootstrap",
+          "exp": "Beginner"
+        },
+        {
+          "id": 4,
+          "skill": "Redux",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 5,
+          "skill": "Git",
+          "exp": "Intermediate"
+        },
+        {
+          "id": 6,
+          "skill": "React Router",
+          "exp": "Intermediate"
+        }
+      ]
+    }
+  ]
+}

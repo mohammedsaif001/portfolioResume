@@ -1,0 +1,32 @@
+{
+  "links": [
+    {
+      "id": "email",
+      "platform": "Email",
+      "url": "mailto:mohammed001saif@gmail.com",
+      "icon": "bx bx-mail-send",
+      "ariaLabel": "Send email to Mohammed Saif"
+    },
+    {
+      "id": "linkedin",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mohammedsaif001/",
+      "icon": "uil uil-linkedin-alt",
+      "ariaLabel": "Visit Mohammed Saif's LinkedIn profile"
+    },
+    {
+      "id": "github",
+      "platform": "GitHub",
+      "url": "https://github.com/mohammedsaif001",
+      "icon": "uil uil-github-alt",
+      "ariaLabel": "Visit Mohammed Saif's GitHub profile"
+    },
+    {
+      "id": "twitter",
+      "platform": "Twitter",
+      "url": "https://twitter.com/mohammed001saif",
+      "icon": "uil uil-twitter-alt",
+      "ariaLabel": "Visit Mohammed Saif's Twitter profile"
+    }
+  ]
+}

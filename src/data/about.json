@@ -1,0 +1,33 @@
+{
+  "sectionTitle": "About Me",
+  "sectionSubtitle": "My Introduction",
+  "profileImage": {
+    "src": "MohammedSaifPro.jpg",
+    "alt": "Mohammed Saif - Frontend Developer"
+  },
+  "stats": [
+    {
+      "id": "education",
+      "icon": "bx bxs-book-bookmark",
+      "title": "Education Qualification",
+      "subtitle": "B.Tech CSE"
+    },
+    {
+      "id": "role",
+      "icon": "bx bx-award",
+      "title": "Software Engineer",
+      "subtitle": "ReactJs Developer"
+    },
+    {
+      "id": "volunteer",
+      "icon": "bx bx-plus-medical",
+      "title": "Community Volunteer",
+      "subtitle": "Heal Bengaluru"
+    }
+  ],
+  "description": "<strong>🚀 Are you prepared to meet a seasoned innovator?</strong> With expertise in React.js, Material UI, Redux-Toolkit, Tailwind CSS, Next.js, I'm a Results-driven Front-End Developer who breathes life into web apps. My industry journey hones skills, optimizing code for seamless user experiences. Crafting captivating interfaces and cutting-edge solutions is my passion. Track record speaks volumes, contributing to successful web app developments. Beyond development, I'm an adventurous soul seeking new challenges to expand my expertise. If you crave confidence, proactivity, adaptability, let's unleash digital brilliance together. We'll craft remarkable impact on technology's ever-evolving landscape. Let's create the extraordinary! 💫🌟",
+  "resume": {
+    "fileName": "Mohammed_Saif_Frontend_Dev_Resume.pdf",
+    "buttonText": "Download Resume"
+  }
+}

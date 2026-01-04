@@ -1,0 +1,41 @@
+{
+  "logo": "Mohammed Saif",
+  "links": [
+    {
+      "id": "home",
+      "label": "Home",
+      "href": "#home",
+      "icon": "uil-estate"
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "href": "#about",
+      "icon": "uil-user"
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "href": "#skills",
+      "icon": "uil-file-alt"
+    },
+    {
+      "id": "projects",
+      "label": "Portfolio",
+      "href": "#projects",
+      "icon": "uil-scenery"
+    },
+    {
+      "id": "qualification",
+      "label": "Qualification",
+      "href": "#qualification",
+      "icon": "uil-briefcase-alt"
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "href": "#contact",
+      "icon": "uil-message"
+    }
+  ]
+}

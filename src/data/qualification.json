@@ -1,0 +1,70 @@
+{
+  "sectionTitle": "Qualification",
+  "sectionSubtitle": "My Achievements",
+  "defaultTab": "experience",
+  "tabs": [
+    {
+      "id": "education",
+      "label": "Education",
+      "icon": "uil-graduation-cap"
+    },
+    {
+      "id": "experience",
+      "label": "Experience",
+      "icon": "uil-briefcase-alt"
+    }
+  ],
+  "education": [
+    {
+      "id": "btech",
+      "title": "B.Tech Computer Science & Engineering",
+      "institution": "Presidency University",
+      "period": "2018-2022",
+      "position": "left"
+    },
+    {
+      "id": "puc",
+      "title": "II PUC",
+      "institution": "Huda National PU College",
+      "period": "2017-2018",
+      "position": "right"
+    },
+    {
+      "id": "sslc",
+      "title": "S.S.L.C",
+      "institution": "Huda National School",
+      "period": "2015-2016",
+      "position": "left"
+    }
+  ],
+  "experience": [
+    {
+      "id": "nviera",
+      "title": "Software Engineer",
+      "company": "Nviera Technologies Pvt Ltd",
+      "period": "Jul 2022 - Feb 2023",
+      "position": "left"
+    },
+    {
+      "id": "heal-volunteer",
+      "title": "ERT Volunteer (Covid-19) | Community Volunteer",
+      "company": "Heal Bengaluru",
+      "period": "Apr 2021 - Jun 2022",
+      "position": "right"
+    },
+    {
+      "id": "fundraiser",
+      "title": "Fundraiser",
+      "company": "Muskurahat Foundation",
+      "period": "Feb 2022 - Mar 2022",
+      "position": "left"
+    },
+    {
+      "id": "covid-warrior",
+      "title": "Covid Warrior",
+      "company": "Heal Bengaluru",
+      "period": "Apr 2021 - Jun 2022",
+      "position": "right"
+    }
+  ]
+}
