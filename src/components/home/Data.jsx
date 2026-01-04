@@ -1,18 +1,54 @@
 import React from 'react'
 import homeData from '../../data/home.json'
+import { motion } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation'
 
 function Data() {
     return (
-        <div className="home__data">
-            <h1 className="home__title">
+        <motion.div
+            className="home__data"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+        >
+            <h1 className="home__title gradient-text">
                 {homeData.name}
+                <motion.span
+                    animate={{ rotate: [0, 14, -8, 14, -4, 10, 0, 0] }}
+                    transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 1 }}
+                    style={{ display: 'inline-block', marginLeft: '10px', originX: 0.7, originY: 0.7 }}
+                >
+                    👋
+                </motion.span>
             </h1>
-            <h3 className="home__subtitle">{homeData.title}</h3>
+
+            <h3 className="home__subtitle">
+                <TypeAnimation
+                    sequence={[
+                        homeData.title,
+                        2000,
+                        'Frontend Developer',
+                        2000,
+                        'UI/UX Enthusiast',
+                        2000,
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    repeat={Infinity}
+                />
+            </h3>
+
             <p
-                className="home__description"
+                className="home__description" 
                 dangerouslySetInnerHTML={{ __html: homeData.description }}
             />
-            <a href={homeData.ctaButton.href} className="button button--flex">
+
+            <motion.a
+                href={homeData.ctaButton.href}
+                className="button button--flex"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+            >
                 {homeData.ctaButton.text}
                 <svg
                     className="button__icon"
@@ -31,8 +67,8 @@ function Data() {
                         fill="var(--container-color)"
                     ></path>
                 </svg>
-            </a>
-        </div>
+            </motion.a>
+        </motion.div>
     )
 }
 

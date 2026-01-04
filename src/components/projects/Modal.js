@@ -1,6 +1,16 @@
+import { motion } from 'framer-motion'
+import React from 'react'
+
 const Modal = ({ toggleState, toggleTab, title, modalTitle, descriptionBulletin, icon, link, toggleTabValue }) => {
     return (
-        <div className="projects__content ">
+        <motion.div 
+            className="projects__content glass"
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: toggleTabValue * 0.1 }}
+            whileHover={{ y: -5 }}
+        >
             <div>
                 <i className={`uil ${icon} projects__icon`}></i>
                 <h3 className="projects__title">{title}</h3>
@@ -68,12 +78,10 @@ const Modal = ({ toggleState, toggleTab, title, modalTitle, descriptionBulletin,
                                 </a>
                             </p>
                         </li>}
-
-
                     </ul>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default Modal
