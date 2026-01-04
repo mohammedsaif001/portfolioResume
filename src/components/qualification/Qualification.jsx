@@ -1,146 +1,83 @@
 import React, { useState } from 'react'
 import "./qualification.css"
+import qualificationData from '../../data/qualification.json'
 
 const Qualification = () => {
-    const [toggleState, setToggleState] = useState(2)
+    const [toggleState, setToggleState] = useState(qualificationData.defaultTab === 'experience' ? 2 : 1)
+
     const toggleTab = (index) => {
         setToggleState(index)
     }
+
+    const renderQualificationData = (items) => {
+        return items.map((item, index) => (
+            <div className="qualification__data" key={item.id}>
+                {item.position === 'left' && (
+                    <>
+                        <div>
+                            <h3 className="qualification__title">{item.title}</h3>
+                            <span className="qualification__subtitle">
+                                {item.institution || item.company}
+                            </span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i>&nbsp;
+                                {item.period}
+                            </div>
+                        </div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </>
+                )}
+                {item.position === 'right' && (
+                    <>
+                        <div></div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                        <div>
+                            <h3 className="qualification__title">{item.title}</h3>
+                            <span className="qualification__subtitle">
+                                {item.institution || item.company}
+                            </span>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i>&nbsp;
+                                {item.period}
+                            </div>
+                        </div>
+                    </>
+                )}
+            </div>
+        ))
+    }
+
     return (
         <section className="qualification section" id="qualification">
-            <h2 className="section__title">Qualification</h2>
-            <span className="section__subtitle">My Achievements</span>
+            <h2 className="section__title">{qualificationData.sectionTitle}</h2>
+            <span className="section__subtitle">{qualificationData.sectionSubtitle}</span>
+
             <div className="qualification__container container">
                 <div className="qualification__tabs">
-                    <div className={toggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(1)}>
-                        <i className="uil uil-graduation-cap qualification__icon"></i> Education
-                    </div>
-                    <div className={toggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(2)}>
-                        <i className="uil uil-briefcase-alt qualification__icon"></i> Experience
-                    </div>
+                    {qualificationData.tabs.map((tab, index) => (
+                        <div
+                            key={tab.id}
+                            className={toggleState === index + 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"}
+                            onClick={() => toggleTab(index + 1)}
+                        >
+                            <i className={`uil ${tab.icon} qualification__icon`}></i> {tab.label}
+                        </div>
+                    ))}
                 </div>
 
                 <div className="qualification__sections">
                     <div className={toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"}>
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">B.Tech Computer Science & Engneering</h3>
-                                <span className="qualification__subtitle"> Presidency University
-                                </span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt">
-                                    </i>&nbsp;
-                                    2018-2022
-                                </div>
-                            </div>
-                            <div><span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-                        <div className="qualification__data">
-                            <div></div>
-                            <div><span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 className="qualification__title">II PUC</h3>
-                                <span className="qualification__subtitle"> Huda National PU College
-                                </span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt">
-                                    </i>&nbsp;
-                                    2017-2018
-                                </div>
-
-                            </div>
-                        </div>
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">S.S.L.C</h3>
-                                <span className="qualification__subtitle">Huda National School
-                                </span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt">
-                                    </i>&nbsp;
-                                    2015-2016
-                                </div>
-
-                            </div>
-                            <div><span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
+                        {renderQualificationData(qualificationData.education)}
                     </div>
+
                     <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Software Engineer</h3>
-                                <span className="qualification__subtitle"> Nviera Technologies Pvt Ltd
-                                </span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt">
-                                    </i> &nbsp;
-                                    Jul 2022 - Feb 2023
-                                </div>
-
-                            </div>
-                            <div><span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div></div>
-                            <div><span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 className="qualification__title">
-                                    ERT Volunteer (Covid-19) | Community Volunteer</h3>
-                                <span className="qualification__subtitle"> Heal Bengaluru
-                                </span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt">
-                                    </i>&nbsp;
-                                    Apr 2021 - Jun 2022
-                                </div>
-
-                            </div>
-                        </div>
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">Fundraiser</h3>
-                                <span className="qualification__subtitle">Muskurahat Foundation
-                                </span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt">
-                                    </i>&nbsp;
-                                    Feb 2022 - Mar 2022
-                                </div>
-
-                            </div>
-                            <div><span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-                        <div className="qualification__data">
-                            <div></div>
-                            <div><span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 className="qualification__title">
-                                    Covid Warrior</h3>
-                                <span className="qualification__subtitle"> Heal Bengaluru
-                                </span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt">
-                                    </i>&nbsp;
-                                    Apr 2021 - Jun 2022
-                                </div>
-
-                            </div>
-                        </div>
+                        {renderQualificationData(qualificationData.experience)}
                     </div>
                 </div>
             </div>

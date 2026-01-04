@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./project.css";
 import Modal from "./Modal";
-import projects from "../../constant/Projects";
+import projectsData from "../../data/projects.json";
 
 const Project = () => {
     const [toggleState, setToggleState] = useState(0);
@@ -21,13 +21,13 @@ const Project = () => {
 
     return (
         <section className="projects section" id="projects">
-            <h2 className="section__title">Projects</h2>
+            <h2 className="section__title">{projectsData.sectionTitle}</h2>
             <span className="section__subtitle">
-                Work Experience & Personal Projects
+                {projectsData.sectionSubtitle}
             </span>
 
             <div className="projects__container container grid">
-                {projects.map((project) => (
+                {projectsData.projects.map((project) => (
                     <Modal
                         key={project.id}
                         toggleState={toggleState}

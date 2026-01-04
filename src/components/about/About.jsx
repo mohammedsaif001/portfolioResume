@@ -3,21 +3,25 @@ import "./about.css"
 import MohammedSaifPro from "../../assets/MohammedSaifPro.jpg"
 import CV from "../../assets/Mohammed_Saif_Frontend_Dev_Resume.pdf"
 import Info from './Info'
+import aboutData from '../../data/about.json'
+
 const About = () => {
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">About Me </h2>
+            <h2 className="section__title">{aboutData.sectionTitle}</h2>
             <span className="section__subtitle">
-                My Introduction
+                {aboutData.sectionSubtitle}
             </span>
             <div className="about__container container grid">
-                <img src={MohammedSaifPro} alt="Mohammed Saif - Frontend Developer" className='about__img' />
+                <img src={MohammedSaifPro} alt={aboutData.profileImage.alt} className='about__img' />
                 <div className="about__data">
                     <Info />
-                    <p className="about__description">
-                        <span style={{ fontWeight: "bold", textAlign: "center", marginBottom: "2px", display: "block" }}> 🚀 Are you prepared to meet a seasoned innovator?</span> With expertise in React.js, Material UI, Redux-Toolkit, Tailwind CSS, Next.js, I'm a Results-driven Front-End Developer who breathes life into web apps. My industry journey hones skills, optimizing code for seamless user experiences. Crafting captivating interfaces and cutting-edge solutions is my passion. Track record speaks volumes, contributing to successful web app developments. Beyond development, I'm an adventurous soul seeking new challenges to expand my expertise. If you crave confidence, proactivity, adaptability, let's unleash digital brilliance together. We'll craft remarkable impact on technology's ever-evolving landscape. Let's create the extraordinary! 💫🌟
-                    </p>
-                    <a href={CV} download="" className="button button--flex">Download Resume
+                    <p
+                        className="about__description"
+                        dangerouslySetInnerHTML={{ __html: aboutData.description }}
+                    />
+                    <a href={CV} download="" className="button button--flex">
+                        {aboutData.resume.buttonText}
                         <svg
                             className="button__icon"
                             xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +46,10 @@ const About = () => {
                                 d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
                                 fill="var(--container-color)"
                             ></path>
-                        </svg></a>
+                        </svg>
+                    </a>
                 </div>
             </div>
-
         </section>
     )
 }

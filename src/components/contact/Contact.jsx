@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
+import contactData from '../../data/contact.json'
 
 function Contact() {
     const form = useRef();
@@ -10,7 +11,9 @@ function Contact() {
         e.preventDefault();
         setSubmitStatus('sending');
 
-        emailjs.sendForm('service_9va57kh', 'template_yiikd0m', form.current, '3l6ud9fgkB4doOG2x')
+        const { serviceId, templateId, publicKey } = contactData.form.emailjs;
+
+        emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             .then(() => {
                 setSubmitStatus('success');
                 e.target.reset();
@@ -21,61 +24,81 @@ function Contact() {
                 setTimeout(() => setSubmitStatus(null), 5000);
             });
     }
+
     return (
         <section className="contact section" id="contact">
-            <h2 className="section__title">Get in Touch</h2>
-            <span className="section__subtitle">Contact Me</span>
+            <h2 className="section__title">{contactData.sectionTitle}</h2>
+            <span className="section__subtitle">{contactData.sectionSubtitle}</span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Contact Details</h3>
+                    <h3 className="contact__title">{contactData.contactDetailsTitle}</h3>
                     <div className="contact__info">
-                        <div className="contact__card">
-                            <i className="bx bx-mail-send contact__card-icon"></i>
-                            <h3 className="contact__card-title"> Email </h3>
-                            <span className="contact__card-data">mohammed001saif@gmail.com</span>
-                            <a href="mailto:mohammed001saif@gmail.com" className="contact__button" rel="noopener noreferrer" aria-label="Send email to Mohammed Saif">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
-
-                        </div>
-                        <div className="contact__card">
-                            <i className="bx bxl-whatsapp contact__card-icon"></i>
-                            <h3 className="contact__card-title"> Whatsapp </h3>
-                            <span className="contact__card-data">+91-9632137360</span>
-                            <a href="https://api.whatsapp.com/send?phone=9632137360&text=Hi Saif, We viewed your profile on your portfolio website can I get more information about you" className="contact__button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
-
-                        </div>
-                        <div className="contact__card">
-                            <i className="bx uil-linkedin-alt contact__card-icon"></i>
-                            <h3 className="contact__card-title"> LinkedIn </h3>
-                            <span className="contact__card-data">@mohammedsaif001</span>
-                            <a href="https://www.linkedin.com/in/mohammedsaif001" className="contact__button" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
-
-                        </div>
+                        {contactData.contactCards.map((card) => (
+                            <div className="contact__card" key={card.id}>
+                                <i className={`${card.icon} contact__card-icon`}></i>
+                                <h3 className="contact__card-title">{card.title}</h3>
+                                <span className="contact__card-data">{card.data}</span>
+                                <a
+                                    href={card.link}
+                                    className="contact__button"
+                                    {...(card.external && { target: "_blank", rel: "noopener noreferrer" })}
+                                    aria-label={card.ariaLabel}
+                                >
+                                    {card.buttonText} <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                        ))}
                     </div>
                 </div>
+
                 <div className="contact__content">
-                    <h3 className="contact__title">Interested in my Profile? Hire Me:)</h3>
-                    <form action="" className="contact__form" ref={form} onSubmit={sendEmail}>
-                        <div className="contact__form-div">
-                            <label htmlFor="contact-name" className="contact__form-tag">Name</label>
-                            <input required type="text" name="name" id="contact-name" className='contact__form-input' placeholder="Enter Your Name" />
-                        </div>
-                        <div className="contact__form-div">
-                            <label htmlFor="contact-email" className="contact__form-tag">Email</label>
-                            <input required type="email" name="email" id="contact-email" className='contact__form-input' placeholder="Enter Your Email" />
-                        </div>
-                        <div className="contact__form-div contact__form-area">
-                            <label htmlFor="contact-organization" className="contact__form-tag">Tell me about the opening</label>
-                            <textarea required name="organization" id="contact-organization" className="contact__form-input" cols="30" rows="10" placeholder='Organization details'></textarea>
-                        </div>
+                    <h3 className="contact__title">{contactData.formTitle}</h3>
+                    <form className="contact__form" ref={form} onSubmit={sendEmail}>
+                        {contactData.form.fields.map((field) => (
+                            <div
+                                className={field.type === 'textarea' ? "contact__form-div contact__form-area" : "contact__form-div"}
+                                key={field.id}
+                            >
+                                <label htmlFor={field.id} className="contact__form-tag">
+                                    {field.label}
+                                </label>
+                                {field.type === 'textarea' ? (
+                                    <textarea
+                                        required={field.required}
+                                        name={field.name}
+                                        id={field.id}
+                                        className="contact__form-input"
+                                        cols={field.cols || 30}
+                                        rows={field.rows || 10}
+                                        placeholder={field.placeholder}
+                                    ></textarea>
+                                ) : (
+                                    <input
+                                        required={field.required}
+                                        type={field.type}
+                                        name={field.name}
+                                        id={field.id}
+                                        className='contact__form-input'
+                                        placeholder={field.placeholder}
+                                    />
+                                )}
+                            </div>
+                        ))}
+
                         {submitStatus === 'success' && (
-                            <p className="contact__message" style={{ color: 'green' }} role="alert">Message sent successfully!</p>
+                            <p className="contact__message" style={{ color: 'green' }} role="alert">
+                                {contactData.form.messages.success}
+                            </p>
                         )}
                         {submitStatus === 'error' && (
-                            <p className="contact__message" style={{ color: 'red' }} role="alert">Failed to send message. Please try again.</p>
+                            <p className="contact__message" style={{ color: 'red' }} role="alert">
+                                {contactData.form.messages.error}
+                            </p>
                         )}
+
                         <button className="button button--flex">
-                            Send Message
+                            {contactData.form.submitButton}
                             <svg
                                 className="button__icon"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +120,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 
