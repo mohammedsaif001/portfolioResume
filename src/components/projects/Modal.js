@@ -65,7 +65,7 @@ const Modal = ({ toggleState, toggleTab, title, modalTitle, descriptionBulletin,
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: toggleTabValue * 0.1 }}
+            transition={{ duration: 0.05, delay:  0.1 }}
             whileHover={{ y: -5 }}
         >
             <div>

@@ -19,7 +19,7 @@ const Skills = () => {
                         initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: true }}
-                        transition={{ delay: index * 0.2, duration: 0.5 }}
+                        transition={{ delay: 0.05, duration: 0.1 }}
                         whileHover={{ scale: 1.02 }}
                     >
                         <h3 className="skills__title">{category.title}</h3>
