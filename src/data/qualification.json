@@ -47,7 +47,7 @@
     },
     {
       "id": "aarabhya",
-      "title": "Software Engineer",
+      "title": "Frontend Engineer",
       "company": "Aarabhya Systems Pvt Ltd",
       "period": "Apr 2023 - Nov 2024",
       "position": "right"
@@ -56,7 +56,7 @@
       "id": "nviera",
       "title": "Software Engineer",
       "company": "Nviera Technologies Pvt Ltd",
-      "period": "Jul 2022 - Feb 2023",
+      "period": "Jun 2022 - Feb 2023",
       "position": "left"
     },
     {
@@ -72,13 +72,6 @@
       "company": "Muskurahat Foundation",
       "period": "Feb 2022 - Mar 2022",
       "position": "left"
-    },
-    {
-      "id": "covid-warrior",
-      "title": "Covid Warrior",
-      "company": "Heal Bengaluru",
-      "period": "Apr 2021 - Jun 2022",
-      "position": "right"
     }
   ]
 }

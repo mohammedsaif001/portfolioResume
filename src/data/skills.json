@@ -8,33 +8,33 @@
       "skills": [
         {
           "id": 1,
-          "skill": "HTML",
-          "exp": "Intermediate"
+          "skill": "React.js",
+          "exp": "Advanced"
         },
         {
           "id": 2,
-          "skill": "CSS",
-          "exp": "Intermediate"
+          "skill": "Next.js",
+          "exp": "Advanced"
         },
         {
           "id": 3,
-          "skill": "Javascript",
+          "skill": "TypeScript",
           "exp": "Intermediate"
         },
         {
           "id": 4,
-          "skill": "ReactJs",
-          "exp": "Intermediate"
+          "skill": "HTML5 / CSS3",
+          "exp": "Advanced"
         },
         {
           "id": 5,
-          "skill": "Next.js",
+          "skill": "Microsoft D365",
           "exp": "Intermediate"
         },
         {
           "id": 6,
-          "skill": "Python",
-          "exp": "Beginner"
+          "skill": "Wordpress",
+          "exp": "Intermediate"
         }
       ]
     },
@@ -44,32 +44,32 @@
       "skills": [
         {
           "id": 1,
-          "skill": "Material UI",
+          "skill": "Redux Toolkit",
           "exp": "Intermediate"
         },
         {
           "id": 2,
-          "skill": "Tailwind Css",
+          "skill": "Tanstack Query",
           "exp": "Intermediate"
         },
         {
           "id": 3,
-          "skill": "Bootstrap",
-          "exp": "Beginner"
+          "skill": "Material UI",
+          "exp": "Intermediate"
         },
         {
           "id": 4,
-          "skill": "Redux",
+          "skill": "Tailwind CSS",
           "exp": "Intermediate"
         },
         {
           "id": 5,
-          "skill": "Git",
+          "skill": "Azure DevOps",
           "exp": "Intermediate"
         },
         {
           "id": 6,
-          "skill": "React Router",
+          "skill": "Git",
           "exp": "Intermediate"
         }
       ]
