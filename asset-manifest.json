@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolioResume/static/css/main.989b423e.css",
-    "main.js": "/portfolioResume/static/js/main.6f78f778.js",
+    "main.css": "/portfolioResume/static/css/main.23b0d8ee.css",
+    "main.js": "/portfolioResume/static/js/main.f0a2e601.js",
     "static/media/MohammedSaifPro.jpg": "/portfolioResume/static/media/MohammedSaifPro.11fe7a69d1a91cea83ee.jpg",
     "static/media/Mohammed_Saif_Frontend_Engineer_4yrs.pdf": "/portfolioResume/static/media/Mohammed_Saif_Frontend_Engineer_4yrs.b23e05463dc83eb0f210.pdf",
     "index.html": "/portfolioResume/index.html",
-    "main.989b423e.css.map": "/portfolioResume/static/css/main.989b423e.css.map",
-    "main.6f78f778.js.map": "/portfolioResume/static/js/main.6f78f778.js.map"
+    "main.23b0d8ee.css.map": "/portfolioResume/static/css/main.23b0d8ee.css.map",
+    "main.f0a2e601.js.map": "/portfolioResume/static/js/main.f0a2e601.js.map"
   },
   "entrypoints": [
-    "static/css/main.989b423e.css",
-    "static/js/main.6f78f778.js"
+    "static/css/main.23b0d8ee.css",
+    "static/js/main.f0a2e601.js"
   ]
 }
