@@ -14,7 +14,8 @@
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease;
+  flex-direction: column;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -23,7 +24,6 @@
 }
 
 .recommendation__card:hover {
-  transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
     border-color: rgba(0, 0, 0, 0.12);
 }

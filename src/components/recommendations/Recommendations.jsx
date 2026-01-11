@@ -50,6 +50,7 @@ const Recommendations = () => {
                             whileInView={{ y: 0, opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.08, duration: 0.4 }}
+                            whileHover={{ y: -5 }}
                         >
                             <div className="recommendation__quote-icon">
                                 <i className="uil uil-quote-left"></i>
