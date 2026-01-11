@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolioResume/static/css/main.989b423e.css",
-    "main.js": "/portfolioResume/static/js/main.880aedef.js",
+    "main.js": "/portfolioResume/static/js/main.6f78f778.js",
     "static/media/MohammedSaifPro.jpg": "/portfolioResume/static/media/MohammedSaifPro.11fe7a69d1a91cea83ee.jpg",
     "static/media/Mohammed_Saif_Frontend_Engineer_4yrs.pdf": "/portfolioResume/static/media/Mohammed_Saif_Frontend_Engineer_4yrs.b23e05463dc83eb0f210.pdf",
     "index.html": "/portfolioResume/index.html",
     "main.989b423e.css.map": "/portfolioResume/static/css/main.989b423e.css.map",
-    "main.880aedef.js.map": "/portfolioResume/static/js/main.880aedef.js.map"
+    "main.6f78f778.js.map": "/portfolioResume/static/js/main.6f78f778.js.map"
   },
   "entrypoints": [
     "static/css/main.989b423e.css",
-    "static/js/main.880aedef.js"
+    "static/js/main.6f78f778.js"
   ]
 }
