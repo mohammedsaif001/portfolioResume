@@ -145,7 +145,7 @@ const Recommendations = () => {
                                                 className="recommendation__linkedin-button"
                                                 aria-label={`View ${selectedRec.name}'s LinkedIn profile`}
                                             >
-                                                <i className="uil uil-linkedin-alt"></i>
+                                                <i className="uil uil-linkedin"></i>
                                             </a>
                                         )}
                                     </div>
