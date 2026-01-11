@@ -22,11 +22,11 @@
       "ariaLabel": "Visit Mohammed Saif's GitHub profile"
     },
     {
-      "id": "twitter",
-      "platform": "Twitter",
-      "url": "https://twitter.com/mohammed001saif",
-      "icon": "uil uil-twitter-alt",
-      "ariaLabel": "Visit Mohammed Saif's Twitter profile"
+      "id": "leetcode",
+      "platform": "LeetCode",
+      "url": "https://leetcode.com/u/mohammedsaif001/",
+      "icon": "uil uil-brackets-curly",
+      "ariaLabel": "Visit Mohammed Saif's LeetCode profile"
     }
   ]
 }
