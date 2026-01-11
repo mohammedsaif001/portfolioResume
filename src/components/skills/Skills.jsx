@@ -7,7 +7,10 @@ import { motion } from "framer-motion"
 const Skills = () => {
     return (
         <section className="skills section" id="skills">
-            <h2 className="section__title gradient-text">{skillsData.sectionTitle}</h2>
+            <h2 className="section__title gradient-text">
+                {skillsData.sectionIcon && <i className={`${skillsData.sectionIcon} section__title-icon`}></i>}
+                {skillsData.sectionTitle}
+            </h2>
             <span className="section__subtitle">
                 {skillsData.sectionSubtitle}
             </span>

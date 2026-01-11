@@ -8,7 +8,10 @@ import { motion } from 'framer-motion'
 const About = () => {
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">{aboutData.sectionTitle}</h2>
+            <h2 className="section__title">
+                {aboutData.sectionIcon && <i className={`${aboutData.sectionIcon} section__title-icon`}></i>}
+                {aboutData.sectionTitle}
+            </h2>
             <span className="section__subtitle">
                 {aboutData.sectionSubtitle}
             </span>

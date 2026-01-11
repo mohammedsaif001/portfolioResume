@@ -1,8 +1,9 @@
 {
   "sectionTitle": "Get in Touch",
+  "sectionIcon": "uil uil-message",
   "sectionSubtitle": "Contact Me",
   "contactDetailsTitle": "Contact Details",
-  "formTitle": "Interested in my Profile? Hire Me:)",
+  "formTitle": "Interested in my Profile? Hire Me :)",
   "contactCards": [
     {
       "id": "email",

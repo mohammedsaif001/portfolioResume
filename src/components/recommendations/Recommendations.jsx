@@ -32,7 +32,10 @@ const Recommendations = () => {
 
     return (
         <section className="recommendations section" id="recommendations">
-            <h2 className="section__title gradient-text">{recommendationsData.sectionTitle}</h2>
+            <h2 className="section__title gradient-text">
+                {recommendationsData.sectionIcon && <i className={`${recommendationsData.sectionIcon} section__title-icon`}></i>}
+                {recommendationsData.sectionTitle}
+            </h2>
             <span className="section__subtitle">
                 {recommendationsData.sectionSubtitle}
             </span>

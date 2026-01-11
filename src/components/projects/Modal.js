@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -6,57 +6,68 @@ const Modal = ({ toggleState, toggleTab, title, modalTitle, descriptionBulletin,
     
     // Create the modal content
     const modalContent = (
-        <div
-            className={
-                toggleState === toggleTabValue
-                    ? "projects__modal active__modal"
-                    : "projects__modal"
-            }
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby={`modal-title-${toggleTabValue}`}
-        >
-            <div className="projects__modal-content ">
-                <button
-                    className="uil uil-times projects__modal-close"
+        <AnimatePresence>
+            {toggleState === toggleTabValue && (
+                <motion.div
+                    className="projects__modal"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
                     onClick={() => toggleTab(0)}
-                    onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') {
-                            e.preventDefault();
-                            toggleTab(0);
-                        }
-                    }}
-                    aria-label="Close modal"
-                    type="button"
-                ></button>
-                <h3 className="projects__modal-title" id={`modal-title-${toggleTabValue}`}>{modalTitle}</h3>
-                <ul className="projects__modal-projects grid">
-                    {descriptionBulletin.map((desc, index) => (
-                        <li className="projects__modal-project" key={index}>
-                            <i className="uil uil-check-circle projects__modal-icon"></i>
-                            <p className="projects__modal-info">
-                                {desc}
-                            </p>
-                        </li>
-                    ))}
-                    {link && <li className="projects__modal-project">
-                        <i className="uil uil-check-circle projects__modal-icon"></i>
-                        <p className="projects__modal-info">
-                            To view this website on github,&nbsp;
-                            <a
-                                href={`${link}`}
-                                style={{ color: "black" }}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="View project on GitHub"
-                            >
-                                Click here.
-                            </a>
-                        </p>
-                    </li>}
-                </ul>
-            </div>
-        </div>
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby={`modal-title-${toggleTabValue}`}
+                >
+                    <motion.div 
+                        className="projects__modal-content"
+                        initial={{ y: 50, opacity: 0, scale: 0.9 }}
+                        animate={{ y: 0, opacity: 1, scale: 1 }}
+                        exit={{ y: 50, opacity: 0, scale: 0.9 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            className="uil uil-times projects__modal-close"
+                            onClick={() => toggleTab(0)}
+                            onKeyDown={(e) => {
+                                if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') {
+                                    e.preventDefault();
+                                    toggleTab(0);
+                                }
+                            }}
+                            aria-label="Close modal"
+                            type="button"
+                        ></button>
+                        <h3 className="projects__modal-title" id={`modal-title-${toggleTabValue}`}>{modalTitle}</h3>
+                        <ul className="projects__modal-projects grid">
+                            {descriptionBulletin.map((desc, index) => (
+                                <li className="projects__modal-project" key={index}>
+                                    <i className="uil uil-check-circle projects__modal-icon"></i>
+                                    <p className="projects__modal-info">
+                                        {desc}
+                                    </p>
+                                </li>
+                            ))}
+                            {link && <li className="projects__modal-project">
+                                <i className="uil uil-check-circle projects__modal-icon"></i>
+                                <p className="projects__modal-info">
+                                    To view this website on github,&nbsp;
+                                    <a
+                                        href={`${link}`}
+                                        style={{ color: "black" }}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="View project on GitHub"
+                                    >
+                                        Click here.
+                                    </a>
+                                </p>
+                            </li>}
+                        </ul>
+                    </motion.div>
+                </motion.div>
+            )}
+        </AnimatePresence>
     );
 
     return (

@@ -27,7 +27,10 @@ function Contact() {
 
     return (
         <section className="contact section" id="contact">
-            <h2 className="section__title">{contactData.sectionTitle}</h2>
+            <h2 className="section__title">
+                {contactData.sectionIcon && <i className={`${contactData.sectionIcon} section__title-icon`}></i>}
+                {contactData.sectionTitle}
+            </h2>
             <span className="section__subtitle">{contactData.sectionSubtitle}</span>
 
             <div className="contact__container container grid">

@@ -1,41 +1,44 @@
 {
   "sectionTitle": "LinkedIn Recommendations",
+  "sectionIcon": "uil uil-award",
   "sectionSubtitle": "What People Say About Me",
   "recommendations": [
-    {
-      "id": "chandan-beeresh",
-      "name": "Chandan Beeresh",
-      "position": "Software Developer | Eager to learn new technologies",
-      "relationship": "Worked together on the same team",
-      "date": "September 9, 2025",
-      "linkedinUrl": "https://www.linkedin.com/in/chandan-beeresh",
-      "text": "I had the pleasure of working with Mohammed Saif on several projects, where he built clean, user-friendly frontend solutions that made collaboration seamless. Knowledge-sharing, collaborative, and reliable — he consistently delivered high-quality results and will be an asset to any team."
-    },
-    {
-      "id": "chandrashekhara-nv",
-      "name": "Chandrashekhara N V",
-      "position": "Software Engineer | Flutter | Flutter Bloc | Next.js | ReactJS | JavaScript | Material UI | Dart",
-      "relationship": "Worked together on the same team",
-      "date": "September 9, 2025",
-      "linkedinUrl": "https://www.linkedin.com/in/chandrashekhara-n-v",
-      "text": "I had the pleasure of working with Mohammed saif, and I can confidently say he is one of the best frontend developers I have worked with, his technical skills are outstanding, and he has strong ability to explain complex concepts clearly, making collaboration very smooth. he is not only highly skilled in frontend development but also proactive, detail-oriented, and always willing to help others. I truly enjoyed working with him and would highly recommend him for any team looking for a talented and reliable frontend developer."
-    },
     {
       "id": "siva-ganeshamoorthy",
       "name": "Siva Ganeshamoorthy",
       "position": "Technology Specialist | Azure Solutions Architect | AI & Cloud Innovator",
       "relationship": "Managed Mohammed directly",
       "date": "September 8, 2025",
-      "linkedinUrl": "https://www.linkedin.com/in/siva-ganeshamoorthy",
+      "linkedinUrl": "https://www.linkedin.com/in/siva-ganeshamoorthy-0154511b1/",
       "text": "Saif is a highly skilled and dedicated professional developer who consistently brings clarity, calmness, and excellence to his work. He has a strong eye for high-quality designs and always asks the right questions during architecture and design discussions, ensuring well-thought-out solutions. Saif's professionalism, technical expertise, and collaborative approach make him a valuable asset to the team."
     },
+      {
+      "id": "chandrashekhara-nv",
+      "name": "Chandrashekhara N V",
+      "position": "Software Engineer | Flutter | Flutter Bloc | Next.js | ReactJS | JavaScript | Material UI | Dart",
+      "relationship": "Worked together on the same team",
+      "date": "September 9, 2025",
+      "linkedinUrl": "https://www.linkedin.com/in/chandrashekhara-n-v-1029a1190/",
+      "text": "I had the pleasure of working with Mohammed saif, and I can confidently say he is one of the best frontend developers I have worked with, his technical skills are outstanding, and he has strong ability to explain complex concepts clearly, making collaboration very smooth. he is not only highly skilled in frontend development but also proactive, detail-oriented, and always willing to help others. I truly enjoyed working with him and would highly recommend him for any team looking for a talented and reliable frontend developer."
+    },
+    {
+      "id": "chandan-beeresh",
+      "name": "Chandan Beeresh",
+      "position": "Software Developer | Eager to learn new technologies",
+      "relationship": "Worked together on the same team",
+      "date": "September 9, 2025",
+      "linkedinUrl": "https://www.linkedin.com/in/chandan-beeresh-669278131/",
+      "text": "I had the pleasure of working with Mohammed Saif on several projects, where he built clean, user-friendly frontend solutions that made collaboration seamless. Knowledge-sharing, collaborative, and reliable — he consistently delivered high-quality results and will be an asset to any team."
+    },
+  
+   
     {
       "id": "mirza-aqeel-raza",
       "name": "Mirza Aqeel Raza",
       "position": "Open to Work | Immediate Joiner | Manual and Automation Testing| Playwright | JavaScript| Selenium WebDriver | Core Java | Software Engineer @ Aarabhya Systems Pvt Ltd",
       "relationship": "Worked together on the same team",
       "date": "February 10, 2023",
-      "linkedinUrl": "https://www.linkedin.com/in/mirza-aqeel-raza",
+      "linkedinUrl": "https://www.linkedin.com/in/mirza-aqeel-raza-129b64162/",
       "text": "I had the pleasure of working with Mohammed Saif as a QA Engineer and I can confidently say that he is a highly skilled and dedicated React JS developer. Throughout our collaboration, Mohammed consistently demonstrated his exceptional abilities in resolving complex bugs and issues that I raised. He approached each challenge with determination and a strong attention to detail, ensuring that the final outcome was of the highest quality.\n\nIn addition to his technical expertise, Mohammed is also a friendly and approachable individual. He is always open to discussions and is willing to go the extra mile to ensure a successful outcome. He has excellent communication skills and is able to articulate technical concepts in a way that is easy for others to understand. This made working with him a truly enjoyable experience.\n\nMohammed Saif has my highest endorsement for any upcoming opportunities as a ReactJS developer. He is an accomplished individual who will enhance any squad. I have no doubt that he will be successful in anything he sets out to do and that he will advance professionally."
     },
     {
@@ -44,7 +47,7 @@
       "position": "Passionate about building dynamic,user-friendly web applications with React.js,ES6,Material-UI,Node.js,and SQLA constant learner focused on delivering scalable solutions and staying updated with modern web technologies.",
       "relationship": "Worked together on the same team",
       "date": "February 7, 2023",
-      "linkedinUrl": "https://www.linkedin.com/in/viniket-tawade",
+      "linkedinUrl": "https://www.linkedin.com/in/viniket-tawade-webdev/",
       "text": "During my tenure at Nviera Technologies, Saif and I were a part of the same team. Having worked with him for a long period, I have observed a few things about him. He is extremely eager and enthusiastic to learn and grow in technologies. He is a good listener and actively listens to the instruction or tasks given to him. Being a fresher, His skills in React, Redux, ES6 have amazed me. His ability to understand the task at hand and get a creative solution for each task assigned makes him a very critical and exceptionally significant resource for any team he works with. I wish him all the best in all his future endeavors."
     },
     {
@@ -53,7 +56,7 @@
       "position": "Software Development Engineer | GenAI | React | Typescript | JavaScript | Python | LLMs | Django | Angular | FastAPI | Prompt Engineering | Master's in Computer Science",
       "relationship": "Senior to Mohammed but didn't manage directly",
       "date": "February 3, 2023",
-      "linkedinUrl": "https://www.linkedin.com/in/gagan-indukala",
+      "linkedinUrl": "https://www.linkedin.com/in/gaganik/",
       "text": "I have had the pleasure of working with Mohammed Saif for the past year as a Software Engineer. He has been an exceptional team member, consistently delivering high-quality work as a ReactJS developer. He is highly knowledgeable in the ReactJS framework and brings a creative approach to solving complex technical challenges. His attention to detail and ability to learn new technologies has been an asset to the team. He consistently delivered high-quality work and was proactive in ensuring projects were completed on time.\n\nMohammed is a team player and a pleasure to work with. He is approachable and always willing to help, making him a great collaborator. His strong communication skills make it easy to work with him, even in a short period of time.\n\nI would highly recommend Mohammed Saif for any future opportunities as a ReactJS developer. He is a talented individual who will bring value to any team. I am confident he will continue to excel in his career and be successful in any role."
     },
     {
@@ -62,7 +65,7 @@
       "position": "Founder | Muskurahat Foundation | Building a youth-led movement for education equity | Rural school transformation | Crowdfunding for good | Social impact leadership",
       "relationship": "Senior to Mohammed but didn't manage directly",
       "date": "April 6, 2022",
-      "linkedinUrl": "https://www.linkedin.com/in/himanshu-goenka",
+      "linkedinUrl": "https://www.linkedin.com/in/himanshu-goenka-30913511b/",
       "text": "Having observed Mohammed's work personally, it is remarkable how he efficiently handled the fundraising campaign. By implementing a continuous improvement strategy, he has made his work an example for his colleagues. His work ethic and performance are both exemplary and uplifting for the team he works with."
     },
     {
@@ -71,7 +74,7 @@
       "position": "Software Engineer|| Java || Java Springboot || DevOps || Jenkins CI/CD pipelines || Docker",
       "relationship": "Studied together",
       "date": "February 24, 2022",
-      "linkedinUrl": "https://www.linkedin.com/in/sri-ram-nethibottu",
+      "linkedinUrl": "https://www.linkedin.com/in/nethibottusriram/",
       "text": "We have started our journey at presidency university as a student and we became partners in every aspects like college projects and social works etc. I fell you as a motivator, guider, mentor and ofcourse a good friend and what not. you have good thoughts and vision upon everything. I fell great to have a Friend like you."
     }
   ]
