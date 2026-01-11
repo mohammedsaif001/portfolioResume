@@ -1,7 +1,6 @@
-import React from 'react'
 import "./about.css"
 import MohammedSaifPro from "../../assets/MohammedSaifPro.jpg"
-import CV from "../../assets/Mohammed_Saif_Frontend_Dev_Resume.pdf"
+import CV from "../../assets/Mohammed_Saif_Frontend_Engineer_4yrs.pdf"
 import Info from './Info'
 import aboutData from '../../data/about.json'
 import { motion } from 'framer-motion'
