@@ -6,13 +6,13 @@
       "id": 1,
       "icon": "uil-brain",
       "title": "AI Reconciliation Assistant",
-      "modalTitle": "AI-Powered Reconciliation Assistant (BASOFA)",
+      "modalTitle": "AI-Powered Reconciliation Assistant",
       "descriptionBulletin": [
-        "Built an AI-powered reconciliation assistant as a standalone React/Next.js capability with asynchronous initialization.",
-        "Implemented real-time, user-specific AI response streaming using SignalR (pub/sub), ensuring strict data isolation per user.",
-        "Designed the integration to be seamless within the larger ERP ecosystem, enhancing user decision-making processes."
-      ],
-      "link": "#"
+        "Architected a scalable, standalone AI assistant using React/Next.js, ensuring loose coupling with the core ERP system.",
+        "Led the frontend implementation of real-time streaming using SignalR, ensuring high-performance data delivery with strict user isolation.",
+        "Defined technical specifications and collaborated with backend architects to design secure API contracts.",
+        "Mentored junior developers on handling asynchronous state complex streaming data management."
+      ]
     },
     {
       "id": 2,
@@ -20,11 +20,11 @@
       "title": "ERP-PSP Reconciliation",
       "modalTitle": "ERP-PSP Financial Reconciliation Platform",
       "descriptionBulletin": [
-        "Architected frontend business flows for ERP-PSP financial reconciliation, supporting manual and automated rule-driven workflows.",
-        "Designed reconciliation as the primary execution flow and re-architected legacy React/Next.js loading using module isolation and deferring non-critical features.",
-        "Coordinated frontend work for the project, including sprint planning and task assignments."
-      ],
-      "link": "#"
+        "Led the frontend architecture for the Financial Reconciliation module, supporting complex manual and automated workflows.",
+        "Managed the frontend sprint cycles, including task estimation, assignment, and code reviews to ensure delivery quality.",
+        "Re-architected the legacy loading strategy using module federation concepts, significantly improving application start time.",
+        "Acted as the primary point of contact for product owners, translating business requirements into technical frontend tasks."
+      ]
     },
     {
       "id": 3,
@@ -32,11 +32,11 @@
       "title": "B2B RBAC Dashboard",
       "modalTitle": "B2B Dashboard with Hierarchical RBAC",
       "descriptionBulletin": [
-        "Built a React/Next.js B2B application with hierarchical user roles, permissions, and data-driven dashboards.",
-        "Implementation ensured secure access control while maintaining a flexible and user-friendly interface for different organizational levels.",
-        "Delivered production-critical performance and stability fixes in legacy-heavy frontend systems."
-      ],
-      "link": "#"
+        "Designed and implemented a generic, hierarchical Role-Based Access Control (RBAC) system for B2B dashboards.",
+        "Established coding standards and best practices for the team, resulting in a more maintainable and consistent codebase.",
+        "Led the refactoring of core UI libraries to reduce technical debt and improve component reusability across multiple projects.",
+        "Conducted daily stand-ups and participated in sprint retro to drive continuous process improvement."
+      ]
     },
     {
       "id": 4,
@@ -44,23 +44,22 @@
       "title": "D365 E-Commerce",
       "modalTitle": "Microsoft D365 B2B E-Commerce Customization",
       "descriptionBulletin": [
-        "Developed custom B2B functionality on Microsoft D365 E-Commerce leveraging the React SDK, Site-builder and platform APIs.",
-        "Took ownership of frontend architecture and delivery across finance, AI, and commerce projects.",
-        "Worked closely with backend and product teams to ensure seamless integration of custom modules."
-      ],
-      "link": "#"
+        "Took ownership of the frontend delivery for the D365 E-Commerce platform, customizing the React SDK to meet specific B2B needs.",
+        "Collaborated closely with cross-functional teams to integrate disparate systems (Finance, AI, Commerce) into a unified user experience.",
+        "Provided technical mentorship to team members on the D365 architecture and React best practices."
+      ]
     },
     {
       "id": 5,
       "icon": "uil-layer-group",
-      "title": "Legacy Optimization",
-      "modalTitle": "System Optimization & Architecture",
+      "title": "System Architecture",
+      "modalTitle": "Frontend Architecture & Optimization",
       "descriptionBulletin": [
-        "Re-architected legacy React/Next.js loading mechanisms using module isolation, significantly improving initial load times.",
-        "Refactored core UI layers and upgraded dependencies to improve maintainability and reduce technical debt.",
-        "Built real-time, data-driven interfaces and supported teams through mentoring and technical guidance."
-      ],
-      "link": "#"
+        "Spearheaded the performance optimization initiative, re-architecting legacy code to improve Core Web Vitals.",
+        "Introduced and enforced strict code review processes and automated testing strategies to maintain high code quality.",
+        "Allocated tasks to the frontend team based on skill sets and project priorities, ensuring efficient resource utilization.",
+        "Facilitated technical workshops to upskill the team on modern React patterns and performance optimization techniques."
+      ]
     }
   ]
 }

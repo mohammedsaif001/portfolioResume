@@ -27,7 +27,7 @@ function Data() {
                     sequence={[
                         homeData.title,
                         2000,
-                        'Frontend Developer',
+                        'Next.js Developer',
                         2000,
                         'UI/UX Enthusiast',
                         2000,

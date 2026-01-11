@@ -15,17 +15,17 @@
     {
       "id": "role",
       "icon": "bx bx-award",
-      "title": "Software Engineer",
-      "subtitle": "ReactJs Developer"
+      "title": "Senior Engineer",
+      "subtitle": "Leading Teams"
     },
     {
       "id": "volunteer",
       "icon": "bx bx-plus-medical",
       "title": "Community Volunteer",
-      "subtitle": "Heal Bengaluru"
+      "subtitle": "Serving Fridays"
     }
   ],
-  "description": "I am a Frontend Engineer with around <strong>4 years of experience building AI, ERP, and B2B web applications.</strong> I work primarily with <strong>React.js, Next.js, and TypeScript</strong> to create scalable and reliable user interfaces. I have been involved in frontend architecture, mentoring team members, and coordinating frontend work for the reconciliation project, supporting sprint planning and task assignments, while working closely with backend and product teams.",
+  "description": "I am a <strong>Senior Frontend Engineer</strong> with extensive experience in <strong>architecting scalable frontend systems</strong> for AI, ERP, and B2B domains. I specialize in <strong>React.js, Next.js, and TypeScript</strong>, while actively <strong>leading frontend teams</strong> through the full SDLC. My role involves <strong>sprint planning, task estimation, and assigning work</strong> to team members, ensuring timely delivery of high-quality code. I am passionate about <strong>mentoring junior developers</strong>, establishing <strong>code quality standards</strong>, and driving <strong>Agile best practices</strong> to foster continuous improvement and innovation.",
   "resume": {
     "fileName": "Mohammed_Saif_Frontend_Dev_Resume.pdf",
     "buttonText": "Download Resume"
