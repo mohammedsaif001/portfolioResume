@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolioResume/static/css/main.e751db04.css",
-    "main.js": "/portfolioResume/static/js/main.c69574f4.js",
-    "static/media/MohammedSaifPro.jpg": "/portfolioResume/static/media/MohammedSaifPro.9e5369ebc6c2bef1630b.jpg",
-    "static/media/Mohammed_Saif_Frontend_Dev_Resume.pdf": "/portfolioResume/static/media/Mohammed_Saif_Frontend_Dev_Resume.7c153b9e5a67ffe36cf5.pdf",
+    "main.css": "/portfolioResume/static/css/main.989b423e.css",
+    "main.js": "/portfolioResume/static/js/main.880aedef.js",
+    "static/media/MohammedSaifPro.jpg": "/portfolioResume/static/media/MohammedSaifPro.11fe7a69d1a91cea83ee.jpg",
+    "static/media/Mohammed_Saif_Frontend_Engineer_4yrs.pdf": "/portfolioResume/static/media/Mohammed_Saif_Frontend_Engineer_4yrs.b23e05463dc83eb0f210.pdf",
     "index.html": "/portfolioResume/index.html",
-    "main.e751db04.css.map": "/portfolioResume/static/css/main.e751db04.css.map",
-    "main.c69574f4.js.map": "/portfolioResume/static/js/main.c69574f4.js.map"
+    "main.989b423e.css.map": "/portfolioResume/static/css/main.989b423e.css.map",
+    "main.880aedef.js.map": "/portfolioResume/static/js/main.880aedef.js.map"
   },
   "entrypoints": [
-    "static/css/main.e751db04.css",
-    "static/js/main.c69574f4.js"
+    "static/css/main.989b423e.css",
+    "static/js/main.880aedef.js"
   ]
 }
