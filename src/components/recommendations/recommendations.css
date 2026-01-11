@@ -351,6 +351,9 @@
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1200px) {
+  .recommendations__container {
+      padding: 0 1rem;
+    }
   .recommendations__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
