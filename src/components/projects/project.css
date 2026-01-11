@@ -192,7 +192,7 @@
 
 @media screen and (max-width: 576px) {
   .projects__modal-content {
-    padding: 4.5rem 1.5rem 2.5rem;
+    padding: 2rem 1.5rem 2.5rem;
   }
 
   .projects__modal-description {

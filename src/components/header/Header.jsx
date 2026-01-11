@@ -38,7 +38,10 @@ function Header() {
                             <li className="nav__item" key={link.id}>
                                 <a
                                     href={link.href}
-                                    onClick={() => setActiveNav(link.href)}
+                                    onClick={() => {
+                                        setActiveNav(link.href);
+                                        setToggle(false);
+                                    }}
                                     className={activeNav === link.href ? "nav__link active-link" : "nav__link"}
                                 >
                                     <i className={`uil ${link.icon} nav__icon`}></i>{link.label}
