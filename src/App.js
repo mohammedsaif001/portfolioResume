@@ -8,6 +8,7 @@ import Home from './components/home/Home';
 import Qualification from './components/qualification/Qualification';
 import Skills from './components/skills/Skills';
 import Project from './components/projects/Project';
+import Recommendations from './components/recommendations/Recommendations';
 import SEO from './components/SEO';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Skills />
         <Project />
         <Qualification />
+        <Recommendations />
         <Contact />
       </main>
       <ScrollUp />

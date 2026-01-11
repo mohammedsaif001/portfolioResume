@@ -32,6 +32,12 @@
       "icon": "uil-briefcase-alt"
     },
     {
+      "id": "recommendations",
+      "label": "Recommendations",
+      "href": "#recommendations",
+      "icon": "uil-award"
+    },
+    {
       "id": "contact",
       "label": "Contact",
       "href": "#contact",
