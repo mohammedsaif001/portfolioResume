@@ -1,26 +1,49 @@
-import React from 'react'
 import "./about.css"
 import MohammedSaifPro from "../../assets/MohammedSaifPro.jpg"
-import CV from "../../assets/Mohammed_Saif_Frontend_Dev_Resume.pdf"
+import CV from "../../assets/Mohammed_Saif_Frontend_Engineer_4yrs.pdf"
 import Info from './Info'
 import aboutData from '../../data/about.json'
+import { motion } from 'framer-motion'
 
 const About = () => {
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">{aboutData.sectionTitle}</h2>
+            <h2 className="section__title">
+                {aboutData.sectionIcon && <i className={`${aboutData.sectionIcon} section__title-icon`}></i>}
+                {aboutData.sectionTitle}
+            </h2>
             <span className="section__subtitle">
                 {aboutData.sectionSubtitle}
             </span>
             <div className="about__container container grid">
-                <img src={MohammedSaifPro} alt={aboutData.profileImage.alt} className='about__img' />
-                <div className="about__data">
+                <motion.img
+                    src={MohammedSaifPro}
+                    alt={aboutData.profileImage.alt}
+                    className='about__img'
+                    initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                />
+                <motion.div
+                    className="about__data"
+                    initial={{ x: 50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                >
                     <Info />
-                    <p
+                    <p 
                         className="about__description"
                         dangerouslySetInnerHTML={{ __html: aboutData.description }}
                     />
-                    <a href={CV} download="" className="button button--flex">
+                    <motion.a
+                        href={CV}
+                        download=""
+                        className="button button--flex"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
                         {aboutData.resume.buttonText}
                         <svg
                             className="button__icon"
@@ -47,8 +70,8 @@ const About = () => {
                                 fill="var(--container-color)"
                             ></path>
                         </svg>
-                    </a>
-                </div>
+                    </motion.a>
+                </motion.div>
             </div>
         </section>
     )

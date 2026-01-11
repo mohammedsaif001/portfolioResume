@@ -21,7 +21,10 @@ const Project = () => {
 
     return (
         <section className="projects section" id="projects">
-            <h2 className="section__title">{projectsData.sectionTitle}</h2>
+            <h2 className="section__title">
+                {projectsData.sectionIcon && <i className={`${projectsData.sectionIcon} section__title-icon`}></i>}
+                {projectsData.sectionTitle}
+            </h2>
             <span className="section__subtitle">
                 {projectsData.sectionSubtitle}
             </span>

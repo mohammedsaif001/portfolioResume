@@ -23,7 +23,7 @@
       "id": "projects",
       "label": "Portfolio",
       "href": "#projects",
-      "icon": "uil-scenery"
+      "icon": "uil-box"
     },
     {
       "id": "qualification",
@@ -32,10 +32,16 @@
       "icon": "uil-briefcase-alt"
     },
     {
+      "id": "recommendations",
+      "label": "Recommendations",
+      "href": "#recommendations",
+      "icon": "uil-linkedin"
+    },
+    {
       "id": "contact",
       "label": "Contact",
       "href": "#contact",
-      "icon": "uil-message"
+      "icon": "uil-envelope-alt"
     }
   ]
 }

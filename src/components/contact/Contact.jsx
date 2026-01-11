@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
 import contactData from '../../data/contact.json'
+import { motion } from 'framer-motion';
 
 function Contact() {
     const form = useRef();
@@ -27,7 +28,10 @@ function Contact() {
 
     return (
         <section className="contact section" id="contact">
-            <h2 className="section__title">{contactData.sectionTitle}</h2>
+            <h2 className="section__title">
+                {contactData.sectionIcon && <i className={`${contactData.sectionIcon} section__title-icon`}></i>}
+                {contactData.sectionTitle}
+            </h2>
             <span className="section__subtitle">{contactData.sectionSubtitle}</span>
 
             <div className="contact__container container grid">
@@ -35,7 +39,12 @@ function Contact() {
                     <h3 className="contact__title">{contactData.contactDetailsTitle}</h3>
                     <div className="contact__info">
                         {contactData.contactCards.map((card) => (
-                            <div className="contact__card" key={card.id}>
+                            <motion.div
+                                className="contact__card"
+                                key={card.id}
+                                whileHover={{ y: -5 }}
+                                transition={{ type: "spring", stiffness: 300 }}
+                            >
                                 <i className={`${card.icon} contact__card-icon`}></i>
                                 <h3 className="contact__card-title">{card.title}</h3>
                                 <span className="contact__card-data">{card.data}</span>
@@ -47,7 +56,7 @@ function Contact() {
                                 >
                                     {card.buttonText} <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                                 </a>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

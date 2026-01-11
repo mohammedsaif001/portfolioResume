@@ -12,6 +12,7 @@ function Social() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={link.ariaLabel}
+                    data-tooltip={link.platform}
                 >
                     <i className={link.icon}></i>
                 </a>

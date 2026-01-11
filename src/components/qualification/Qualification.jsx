@@ -55,7 +55,10 @@ const Qualification = () => {
 
     return (
         <section className="qualification section" id="qualification">
-            <h2 className="section__title">{qualificationData.sectionTitle}</h2>
+            <h2 className="section__title">
+                {qualificationData.sectionIcon && <i className={`${qualificationData.sectionIcon} section__title-icon`}></i>}
+                {qualificationData.sectionTitle}
+            </h2>
             <span className="section__subtitle">{qualificationData.sectionSubtitle}</span>
 
             <div className="qualification__container container">
