@@ -39,6 +39,20 @@
   ],
   "experience": [
     {
+      "id": "basofa",
+      "title": "React Developer",
+      "company": "BASOFA Consulting Pvt Ltd - Microsoft Certified Partner",
+      "period": "Nov 2024 - Present",
+      "position": "left"
+    },
+    {
+      "id": "aarabhya",
+      "title": "Software Engineer",
+      "company": "Aarabhya Systems Pvt Ltd",
+      "period": "Apr 2023 - Nov 2024",
+      "position": "right"
+    },
+    {
       "id": "nviera",
       "title": "Software Engineer",
       "company": "Nviera Technologies Pvt Ltd",
