@@ -85,6 +85,10 @@
     height: var(--header-height);
   }
 
+    .header .container {
+      margin-left: 0;
+      margin-right: 0;
+    }
   .nav__menu {
     position: fixed;
     bottom: -100%;

@@ -58,6 +58,7 @@
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 6;
+  line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -155,6 +156,7 @@
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -242,6 +244,7 @@
   display: flex;
   gap: 1rem;
   align-items: flex-start;
+  padding-right: 2.5rem;
 }
 
 .recommendation__modal-avatar {
@@ -267,8 +270,9 @@
 .recommendation__modal-name-row {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   margin-bottom: 0.25rem;
+  flex-wrap: wrap;
 }
 
 .recommendation__modal-name {
@@ -281,7 +285,7 @@
 
 .recommendation__linkedin-button {
   color: var(--title-color);
-    font-size: 1.5rem;
+  font-size: 1.25rem;
     transition: all 0.3s;
   display: flex;
   align-items: center;
@@ -307,6 +311,7 @@
   gap: 1rem;
   font-size: 0.875rem;
   color: var(--text-color-light);
+  align-items: center;
 }
 
 .recommendation__modal-meta span {
@@ -352,7 +357,7 @@
 /* For large devices */
 @media screen and (max-width: 1200px) {
   .recommendations__container {
-      padding: 0 1rem;
+    padding: 0 1.5rem;
     }
   .recommendations__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -384,6 +389,7 @@
     
     .recommendation__text {
       -webkit-line-clamp: 4;
+      line-clamp: 4;
     }
 
         .recommendation__meta {
@@ -436,6 +442,7 @@
     
     .recommendation__text {
       -webkit-line-clamp: 3;
+      line-clamp: 3;
     }
     
     .recommendation__modal {
