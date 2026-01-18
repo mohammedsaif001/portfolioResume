@@ -12,7 +12,7 @@
       "linkedinUrl": "https://www.linkedin.com/in/siva-ganeshamoorthy-0154511b1/",
       "text": "Saif is a highly skilled and dedicated professional developer who consistently brings clarity, calmness, and excellence to his work. He has a strong eye for high-quality designs and always asks the right questions during architecture and design discussions, ensuring well-thought-out solutions. Saif's professionalism, technical expertise, and collaborative approach make him a valuable asset to the team."
     },
-      {
+    {
       "id": "chandrashekhara-nv",
       "name": "Chandrashekhara N V",
       "position": "Software Engineer | Flutter | Flutter Bloc | Next.js | ReactJS | JavaScript | Material UI | Dart",
@@ -30,8 +30,15 @@
       "linkedinUrl": "https://www.linkedin.com/in/chandan-beeresh-669278131/",
       "text": "I had the pleasure of working with Mohammed Saif on several projects, where he built clean, user-friendly frontend solutions that made collaboration seamless. Knowledge-sharing, collaborative, and reliable — he consistently delivered high-quality results and will be an asset to any team."
     },
-  
-   
+    {
+      "id": "manjunatha-v-m",
+      "name": "Manjunatha V M",
+      "position": "Sr. Software Engineer | JavaScript | Node.js | React | Microservices | Docker | Cloud (AWS) | Ex-Tejas Networks",
+      "relationship": "Managed Mohammed directly",
+      "date": "January 16, 2026",
+      "linkedinUrl": "https://www.linkedin.com/in/manjuvm/",
+      "text": "I had the pleasure of working with Mohammad Saif, who reported to me as a Frontend Developer. He consistently delivered high-quality UI features with great attention to detail. He is strong in React.js, JavaScript, and modern UI development, and always maintained clean, scalable code. He is reliable, proactive, and a great team player. I highly recommend him for any frontend development role."
+    },
     {
       "id": "mirza-aqeel-raza",
       "name": "Mirza Aqeel Raza",
